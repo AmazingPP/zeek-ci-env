@@ -5,7 +5,7 @@
 
 [centos-sclo-rh]
 name=CentOS-7 - SCLo rh
-baseurl=http://vault.centos.org/centos/7.9.2009/sclo/$basearch/rh/
+baseurl=http://vault.centos.org/centos/7/sclo/$basearch/rh/
 #mirrorlist=http://mirrorlist.centos.org?arch=$basearch&release=7&repo=sclo-rh
 gpgcheck=0
 enabled=1
