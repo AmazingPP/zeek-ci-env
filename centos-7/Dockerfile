@@ -26,16 +26,14 @@ RUN yum -y install \
     cmake3 \
     curl \
     ccache \
-    git \
     findutils \
     libpcap-devel \
     make \
     openssl \
     openssl-devel \
-    rh-python38 \
-    rh-python38-devel \
-    rh-python38-python-devel \
-    rh-python38-pip \
+    python3 \
+    python3-devel \
+    python3-pip \
     sqlite \
     swig \
     which \
@@ -48,7 +46,6 @@ RUN pip3 install websockets junit2html
 
 RUN echo 'unset BASH_ENV PROMPT_COMMAND ENV' > /usr/bin/zeek-ci-env && \
     echo 'source /opt/rh/devtoolset-11/enable' >> /usr/bin/zeek-ci-env && \
-    echo 'source /opt/rh/rh-python38/enable' >> /usr/bin/zeek-ci-env && \
     echo 'source /opt/rh/rh-git227/enable' >> /usr/bin/zeek-ci-env
 
 ENV BASH_ENV="/usr/bin/zeek-ci-env" \
