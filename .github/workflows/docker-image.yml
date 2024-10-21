@@ -71,7 +71,7 @@ jobs:
         with:
           images: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
           flavor: |
-            latest=false
+            latest=auto
             suffix=-${{ matrix.os }}
 
       # Build and push Docker image with Buildx (don't push on PR)
