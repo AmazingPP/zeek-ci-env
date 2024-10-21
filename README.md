@@ -1,3 +1,3 @@
 # Zeek CI Environment Container
 
-This project includes Docker container configuration files for setting up Zeek CI environment.
+This project extends the [Zeek](https://github.com/zeek/zeek) CI environment to support more Linux distributions, primarily focusing on domestic (Chinese) distributions.
