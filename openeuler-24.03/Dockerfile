@@ -19,6 +19,7 @@ RUN yum -y install \
     libasan \
     libtsan \
     libubsan \
+    unzip \
     make \
     openssl \
     openssl-devel \
@@ -31,4 +32,4 @@ RUN yum -y install \
     zlib-devel \
   && yum clean all && rm -rf /var/cache/yum
 
-RUN pip3 install websockets junit2html
+RUN pip3 install websockets junit2html gcovr
