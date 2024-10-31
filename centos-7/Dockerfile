@@ -28,6 +28,7 @@ RUN yum -y install \
     ccache \
     findutils \
     libpcap-devel \
+    libmaxminddb-devel \
     make \
     openssl \
     openssl-devel \
@@ -40,6 +41,7 @@ RUN yum -y install \
     zlib-devel \
     devtoolset-11 \
     rh-git227 \
+    rpmdevtools \
   && yum clean all && rm -rf /var/cache/yum
 
 RUN pip3 install websockets junit2html
