@@ -24,6 +24,7 @@ RUN yum -y install \
     git \
     tar \
     xz \
+    rpmdevtools \
   && yum clean all && rm -rf /var/cache/yum
 
 RUN pip3 install websockets junit2html

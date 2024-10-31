@@ -31,6 +31,7 @@ RUN yum -y install \
     swig \
     which \
     zlib-devel \
+    rpmdevtools \
   && yum clean all && rm -rf /var/cache/yum
 
 RUN pip3 install websockets junit2html gcovr
