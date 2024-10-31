@@ -28,6 +28,7 @@ RUN yum -y install \
     ccache \
     findutils \
     libpcap-devel \
+    libmaxminddb-devel \
     make \
     openssl \
     openssl-devel \

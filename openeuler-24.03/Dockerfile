@@ -16,6 +16,7 @@ RUN yum -y install \
     curl \
     findutils \
     libpcap-devel \
+    libmaxminddb-devel \
     libasan \
     libtsan \
     libubsan \
