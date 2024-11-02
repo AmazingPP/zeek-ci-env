@@ -35,3 +35,7 @@ RUN yum -y install \
   && yum clean all && rm -rf /var/cache/yum
 
 RUN pip3 install websockets junit2html gcovr
+
+RUN sed -i \
+    's/%dist %{nil}/%dist .oe2403/' \
+    /etc/rpm/macros.dist
