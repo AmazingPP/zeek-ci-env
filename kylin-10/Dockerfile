@@ -25,6 +25,8 @@ RUN yum -y install \
     tar \
     xz \
     rpmdevtools \
+    dpdk-devel \
+    numactl-devel \
   && yum clean all && rm -rf /var/cache/yum
 
 RUN pip3 install websockets junit2html
