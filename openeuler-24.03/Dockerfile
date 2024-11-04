@@ -32,6 +32,8 @@ RUN yum -y install \
     which \
     zlib-devel \
     rpmdevtools \
+    dpdk-devel \
+    numactl-devel \
   && yum clean all && rm -rf /var/cache/yum
 
 RUN pip3 install websockets junit2html gcovr
